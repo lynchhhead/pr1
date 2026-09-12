@@ -1,0 +1,12 @@
+using System;
+class Prr
+{
+        static void Main()
+    {
+        const double KURS=84.15;
+        Console.Write("Введите количество рублей: ");
+        double rubli=Convert.ToDouble(Console.ReadLine());
+        double dollars=rubli / KURS;
+        Console.WriteLine($"{rubli} рублей по курсу {KURS} равно {dollars:F2} долларов");
+    }
+}
